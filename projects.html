@@ -9,52 +9,10 @@
 	<!-- Framework CSS --> 
 	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection"> 
 	<link rel="stylesheet" href="css/plugins/buttons/screen.css" type="text/css" media="screen, projection"> 
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection"> 
 	<link rel="stylesheet" href="css/print.css" type="text/css" media="print"> 
 	<!--[if lt IE 8]><link rel="stylesheet" href="../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
-	<style type="text/css" media="screen"> 
-	body {
-		font-size: 15px;
-		background-image: url(images/bg.png);
-		font-family: ;"Museo Sans", Helvetica, sans-serif;
-	}
 
-	#header {
-		border-bottom: 1px solid #E3E5E8;
-		color: #45525F;
-	}
-
-	#header #title {
-		font-size: 2.5em;
-		font-weight: bold;	
-	}
-	#header #subtitle {
-		font-weight: normal;
-		font-style: italic;
-		font-family: Georgia, "Times New Roman", Times, serif;
-	}
-	
-	.frame {
-		padding: 1em 0;
-		background-image: url(images/bg_dark.png);
-	}
-
-	.big-text-box .number {
-		font-size: 2.5em;
-	}
-	.big-text-box .desc {
-		font-size: 1em;
-	}
-
-	.build-success {
-		color: #52A622;
-	}
-	.build-failed {
-		color: #B90016;
-	}
-	.build-running {
-		color: #D6C200;
-	}
-	</style> 
 </head> 
 <body> 
 	<div class="container" id="header">
@@ -63,30 +21,25 @@
 	</div>
 	<br/>
 
-	<div class="frame">
-				<div class="container">
-					<div>We have analyzed 1 hudson server and get</div>
-					<div class="span-6 border big-text-box">
-						<div class="number">34</div> <div class="desc">projects</div>
-					</div>
-					<div class="span-6 border big-text-box build-success">
-						<div class="number">20</div> <div class="desc">successful</div>
-					</div>
-					<div class="span-6 border big-text-box build-failed">
-						<div class="number">9</div> <div class="desc">failed</div>
-					</div>
-					<div class="span-6 last big-text-box build-running">
-						<div class="number">5</div> <div class="desc">running</div>
-					</div>
-				</div>
-			</div>
-
-		<hr/>
-
+	<div class="container frame">
+		<div>We have analyzed 1 hudson server and get</div>
+		<div class="span-6 border big-text-box">
+			<div class="number">34</div> <div class="desc">projects</div>
+		</div>
+		<div class="span-6 border big-text-box build-success">
+			<div class="number">20</div> <div class="desc">successful</div>
+		</div>
+		<div class="span-6 border big-text-box build-failed">
+			<div class="number">9</div> <div class="desc">failed</div>
+		</div>
+		<div class="span-6 last big-text-box build-running">
+			<div class="number">5</div> <div class="desc">running</div>
+		</div>
+	</div>
 	<div class="container">
-			<h1>Projects</h1>
-			<p>Select <a>all</a>, <a>none</a> projects to <a>compare them</a>.</p>
-		<form>
+		<hr/>
+		<p>Select <a>all</a>, <a>none</a> projects to <a href="compare.html">compare them</a>.</p>
+		<form action="compare.html">
 			<table border="0" cellspacing="0" cellpadding="0">
 				<thead>
 					<tr>
