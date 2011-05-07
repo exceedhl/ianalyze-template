@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd"> 
+
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>List all continuous integration projects</title> 
+
+	<!-- Framework CSS --> 
+	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection"> 
+	<link rel="stylesheet" href="css/plugins/buttons/screen.css" type="text/css" media="screen, projection"> 
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print"> 
+	<!--[if lt IE 8]><link rel="stylesheet" href="../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+	<style type="text/css" media="screen"> 
+	body {
+		font-size: 15px;
+		background-image: url(images/bg.png);
+		font-family: ;"Museo Sans", Helvetica, sans-serif;
+	}
+
+	#header {
+		border-bottom: 1px solid #E3E5E8;
+		color: #45525F;
+	}
+
+	#header #title {
+		font-size: 2.5em;
+		font-weight: bold;	
+	}
+	#header #subtitle {
+		font-weight: normal;
+		font-style: italic;
+		font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	
+	.frame {
+		padding: 1em 0;
+		background-image: url(images/bg_dark.png);
+	}
+
+	.big-text-box .number {
+		font-size: 2.5em;
+	}
+	.big-text-box .desc {
+		font-size: 1em;
+	}
+
+	.build-success {
+		color: #52A622;
+	}
+	.build-failed {
+		color: #B90016;
+	}
+	.build-running {
+		color: #D6C200;
+	}
+	</style> 
+</head> 
+<body> 
+	<div class="container" id="header">
+		<span id="title">iAnalyze</span>
+		<span id="subtitle">&nbsp;&nbsp;&nbsp;&nbsp;Tell more about your builds</span>
+	</div>
+	<br/>
+
+	<div class="frame">
+				<div class="container">
+					<div>We have analyzed 1 hudson server and get</div>
+					<div class="span-6 border big-text-box">
+						<div class="number">34</div> <div class="desc">projects</div>
+					</div>
+					<div class="span-6 border big-text-box build-success">
+						<div class="number">20</div> <div class="desc">successful</div>
+					</div>
+					<div class="span-6 border big-text-box build-failed">
+						<div class="number">9</div> <div class="desc">failed</div>
+					</div>
+					<div class="span-6 last big-text-box build-running">
+						<div class="number">5</div> <div class="desc">running</div>
+					</div>
+				</div>
+			</div>
+
+		<hr/>
+
+	<div class="container">
+			<h1>Projects</h1>
+			<p>Select <a>all</a>, <a>none</a> projects to <a>compare them</a>.</p>
+		<form>
+			<table border="0" cellspacing="0" cellpadding="0">
+				<thead>
+					<tr>
+						<th class="span-8">Name</th>
+						<th class="span-4">Current Status</th>
+						<th class="span-4">Builds</th>
+						<th class="span-4">Success Rate</th>
+						<th class="span-4">Last Build Duration</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox"> <a href="#">apitest</a></td>
+						<td class="build-success">Success</td>
+						<td>35</td>
+						<td>87%</td>
+						<td>3m 25s</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"> faqsuck</td>
+						<td class="build-failed">Failed</td>
+						<td>35</td>
+						<td>87%</td>
+						<td>3m 25s</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"> apitest</td>
+						<td class="build-success">Success</td>
+						<td>35</td>
+						<td>87%</td>
+						<td>3m 25s</td>
+					</tr>
+				</tbody>
+			</table>
+			<button class="positive">Compare</button>
+		</form>
+	</div>
+</body>
+</html>
