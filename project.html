@@ -4,7 +4,7 @@
 <html> 
 <head> 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
-	<title>Compare projects</title> 
+	<title>Project: apitest</title> 
 
 	<!-- Framework CSS --> 
 	<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen, projection"> 
@@ -12,8 +12,7 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection"> 
 	<link rel="stylesheet" href="css/print.css" type="text/css" media="print"> 
 	<!--[if lt IE 8]><link rel="stylesheet" href="../blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
-	<style type="text/css" media="screen"> 
-	</style>
+
 </head> 
 <body> 
 	<div class="container" id="header">
@@ -21,17 +20,40 @@
 		<span id="subtitle">&nbsp;&nbsp;&nbsp;&nbsp;Tell more about your builds</span>
 	</div>
 	<br/>
-	
+
+	<div class="container frame">
+		<h1>Project apitest</h1>
+		<div class="span-4 border big-text-box">
+			<div class="number">100</div> <div class="desc">build</div>
+		</div>
+		<div class="span-4 border big-text-box build-success">
+			<div class="number">75</div> <div class="desc">successful</div>
+		</div>
+		<div class="span-4 border big-text-box build-failed">
+			<div class="number">25</div> <div class="desc">failed</div>
+		</div>
+		<div class="span-6 border big-text-box build-running">
+			<div class="number">75%</div> <div class="desc">success rate</div>
+		</div>
+		<div class="span-6 last big-text-box build-running">
+			<div class="number">3' 25"</div> <div class="desc">taken by last build</div>
+		</div>
+	</div>
 	<div class="container">
-		<h2>Build times and success rate comparison</h2>
+		<hr/>
+		<h2>Build times and success rate in past days</h2>
 		<img src="images/chart1.png"/>
 		
 		<hr class="space"/>
-		<h2>Build duration comparison</h2>
+		<h2>Build duration scatter plot by days</h2>
 		<img src="images/chart1.png"/>
 		
 		<hr class="space"/>
-		<h2>Build times of a day comparison</h2>
+		<h2>Build committers</h2>
+		<img src="images/chart1.png"/>
+		
+		<hr class="space"/>
+		<h2>Time taken to fix failed build</h2>
 		<img src="images/chart1.png"/>
 	</div>
 	
